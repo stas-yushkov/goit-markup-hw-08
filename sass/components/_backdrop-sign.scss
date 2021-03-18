@@ -1,0 +1,94 @@
+
+
+/* sign backdrop */
+.backdrop-sign {
+  position: fixed;
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-overlay-color);
+  opacity: 1;
+
+  /* visibility: visible; */
+
+  /* transition-property: opacity;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function); */
+  transition: opacity var(--transition-duration)
+      var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
+}
+
+.backdrop-sign.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  /* transition-property: visibility;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function); */
+}
+
+.backdrop-sign.is-hidden .modal-sign {
+  transform: scale(0.9) translateX(-50%) translateY(-50%);
+}
+
+.modal-sign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: top left;
+  transform: scale(1) translateX(-50%) translateY(-50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+
+  color: var(--secondary-color);
+  background-color: var(--white-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 4px;
+
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--transparent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  border: 1px solid var(--close-border-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: var(--black-color);
+  cursor: pointer;
+  outline: none;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.close-button > svg {
+  fill: currentColor;
+}

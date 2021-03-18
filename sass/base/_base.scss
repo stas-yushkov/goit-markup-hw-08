@@ -1,0 +1,34 @@
+/* Common font, color, bg-color */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+/* reset margins for headings & paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove underline from urls */
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Remove markers from lists */
+.list {
+  list-style: none;
+}

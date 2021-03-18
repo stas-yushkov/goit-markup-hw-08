@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  width: 1200px; /* TODooooO: @width в будущем переделать под адаптив@ сделать "max-width: 1200px;" и пофиксить все что поплывет при изменении вьюпорта */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

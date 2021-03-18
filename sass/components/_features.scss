@@ -1,0 +1,31 @@
+
+.features-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--secondary-color);
+}
+
+.features .card {
+  flex-basis: calc(100% / 4 - var(--flex-grid-gap));
+
+  margin-top: var(--flex-grid-gap);
+  margin-left: var(--flex-grid-gap);
+}
+
+.features .card__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  /* padding: 25px 100px; */
+  /* padding: auto;
+  text-align: center; */
+
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+}
+

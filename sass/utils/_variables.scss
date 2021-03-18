@@ -1,0 +1,38 @@
+/* Variables */
+:root {
+  --accent-color: #2196f3; /* accent-color */
+  --hover-background-color: #188ce8; /* bg hover for hero button */
+  --secondary-color: #212121; /* text titles */
+  --primary-color: #757575; /* primary-color text */
+  --white-color: #ffffff; /* white-color for some text */
+  --border-color: #ececec; /* border */
+  --portfolio-border-color: #eeeeee; /* Border-color for portfolio */
+  --modal-input-border-color: rgba(33, 33, 33, 0.2);
+  --secondary-background-color: #f5f4fa; /* bg some buttons */
+  --address-primary-color: rgba(255, 255, 255, 0.6); /* address-primary-color */
+  --black-color: #000000; /* black-color */
+  --primary-background-color: #2f303a; /* primary-background-color footer and hero */
+  --social-link-color: #afb1b8; /* social-link color */
+  --hero-bg-color: #c4c4c4; /* bg for hero */
+  --hero-overlay-color: rgba(47, 48, 58, 0.4);
+  --about-overlay-color: rgba(47, 48, 58, 0.8);
+  --portfolio-overlay-color: rgba(33, 150, 243, 0.9);
+  --modal-overlay-color: rgba(0, 0, 0, 0.2);
+  --close-border-color: rgba(0, 0, 0, 0.1);
+  --email-form-border-color: rgba(255, 255, 255, 0.3);
+
+  --footer-socials-bg-color: rgba(255, 255, 255, 0.1);
+  --transparent-color: rgba(0, 0, 0, 0);
+
+  --flex-grid-gap: 30px; /* set-gap between cards for adaptive grid */
+
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --portfolio-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

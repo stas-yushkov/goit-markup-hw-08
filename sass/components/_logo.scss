@@ -1,0 +1,29 @@
+
+/* Logo styles */
+.logo {
+  margin-right: 93px;
+
+  /* position: relative; */
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+
+  /* transition-property: text-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function); */
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    /* text-shadow: var(--button-shadow); */
+  }
+}
+
+.logo__part {
+  color: var(--black-color);
+}

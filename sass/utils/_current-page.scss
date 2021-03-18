@@ -1,0 +1,28 @@
+
+.current-page {
+  color: var(--accent-color);
+  position: relative;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  
+  &:hover,
+  &:focus {
+    color: var(--hover-background-color);
+
+    /* text-shadow: var(--button-shadow); */
+  }
+}
+
+
+.current-page::after {
+  background-color: var(--accent-color);
+}
+
+.current-page:hover::after,
+.current-page:focus::after {
+  background-color: var(--hover-background-color);
+}
+

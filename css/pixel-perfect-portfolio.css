@@ -1,0 +1,26 @@
+@charset "UTF-8";
+HTML {
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  /* По умолчанию мобильный макет */
+  background-image: url("../images/portfolio-pp.jpg");
+}
+
+@media (min-width: 760px) {
+  HTML {
+    background-image: url("../images/portfolio-pp.jpg");
+    /* Планшетный макет */
+  }
+}
+
+@media (min-width: 960px) {
+  HTML {
+    background-image: url("../images/portfolio-pp.jpg");
+    /* Десктопный макет */
+  }
+}
+
+BODY {
+  opacity: 0.5;
+}
+/*# sourceMappingURL=pixel-perfect-portfolio.css.map */

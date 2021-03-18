@@ -1,0 +1,41 @@
+.button {
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: var(--secondary-background-color);
+  border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  
+  &:hover,
+  &:focus {
+    background-color: var(--hover-background-color);
+    color: var(--white-color);
+    outline: none;
+    box-shadow: var(--button-shadow);
+  }
+}
+
+// .button:hover,
+// .button:focus {
+//   color: var(--white-color);
+//   background-color: var(--accent-color);
+//   outline: none;
+
+//   box-shadow: var(--button-shadow);
+// }
+
+
+// .button:hover,
+// .button:focus {
+//   background-color: var(--hover-background-color);
+//   box-shadow: var(--button-shadow);
+// }
+

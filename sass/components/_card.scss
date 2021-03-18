@@ -1,0 +1,48 @@
+.card {
+  background-color: var(--white-color);
+  max-width: 270px;
+}
+
+/* Самая простая техника отзывчивых изображений card__thumb */
+.card__thumb {
+  display: block;
+}
+
+/* delletes indents for inline images */
+img {
+  display: block; /* убивает зазор в 1/4em строчного элемента картинки просто делая ее блочным */
+
+  max-width: 100%;
+
+  /* высоту для современных браузеров ставить тут не обязательно */
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 30px 32px;
+  text-align: center;
+
+  /* padding-bottom: 30px; */
+  /* outline: 1px dotted tomato; */
+}
+
+.card__title {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.card-item {
+  margin-top: 10px;
+
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.19;
+} /* end of main section */
+
+.card__text {
+  line-height: 1.85;
+}

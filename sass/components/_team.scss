@@ -1,0 +1,16 @@
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team .card__thumb {
+  max-height: 260px;
+}
+
+
+.team__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

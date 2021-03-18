@@ -1,0 +1,41 @@
+
+.address-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+ 
+.address-item.map {
+  margin-bottom: 9px;
+  color: var(--white-color);
+}
+
+.address-item {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  margin-right: 30px;
+  align-items: center;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.address-item:last-child {
+  margin-right: 0;
+}
+
+.address-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}

@@ -1,0 +1,51 @@
+.clients__container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--social-link-color);
+  border-radius: 4px;
+  fill: var(--social-link-color);
+
+  transition-property: fill, border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+    outline: none;
+  }
+
+}
+
+
+.clients .flex-grid__item {
+  flex-basis: calc(
+    100% / 6 - var(--flex-grid-gap)
+  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--flex-grid-gap)  */
+
+  margin-top: var(--flex-grid-gap);
+  margin-left: var(--flex-grid-gap);
+
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2); */
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: none;
+
+  background-color: var(--white-color);
+
+  /* width: 270px; */
+}
+
+/* * {
+  outline: 1px dotted rgba(0, 0, 0, 0.06);
+} */

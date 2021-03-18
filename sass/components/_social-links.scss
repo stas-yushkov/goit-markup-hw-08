@@ -1,0 +1,29 @@
+.social-links {
+  display: flex;
+  margin-top: 16px;
+  justify-content: space-between;
+
+  /* Remove markers from lists */
+  list-style: none;
+}
+
+.social-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--social-link-color);
+
+  transition-property: fill, background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+    outline: none;
+  }
+}
