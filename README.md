@@ -20,3 +20,8 @@ picsum.photos - раздает рандомные картинки
 проверить на переполнение текстом карточки порфолио. пофиксить (ссылка display
 flex column{text[flex grow 1]}) контентные изображения прицепить через
 img(src-set: jkjjjj x1, hhhhh x2; src jkjjjj) mobile menu workshop github
+
+Открываем вкладку Console, вставляем команду document.body.contentEditable =
+true, На что обращать внимание? При добавлении текста элементы должны
+растягиваться по вертикали, текст не должен вылезать за поля элемента, выпадать
+или обрезаться. https://htmlacademy.ru/blog/boost/tools/chrome-devtools-1
