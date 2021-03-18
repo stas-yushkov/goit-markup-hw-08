@@ -1,6 +1,6 @@
 # goit-markup-hw-08
 
-лепим адаптив
+проверить версию фигмы лепим адаптив
 
 webmasters flaticon
 
