@@ -1,29 +1,39 @@
-
-/* Logo styles */
 .logo {
-  margin-right: 93px;
-
-  /* position: relative; */
+  padding: 16px 0;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-
+  font-size: 24px;
+  line-height: 1.166666;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-
-  /* transition-property: text-shadow;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function); */
-
+  
   &:hover,
   &:focus {
     outline: none;
-
-    /* text-shadow: var(--button-shadow); */
+  }
+  
+  @media (min-width: 480px) {
+    // width: 480px;
+    // background-color: red;
+  }
+  
+  @media (min-width: 768px) {
+    padding: 26px 0;
+    margin-right: 88px;
+    // width: 768px;
+    // background-color: rosybrown;
+  }
+  
+  @media (min-width:1600px) {
+    font-size: 26px;
+    line-height: 1.192307;
+    margin-right: 93px;
+    // width: 1600px;
+    // background-color: saddlebrown;
   }
 }
 
 .logo__part {
   color: var(--black-color);
 }
+

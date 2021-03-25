@@ -1,11 +1,24 @@
 .header {
   position: relative;
-
+  // min-height: 60px;
   background-color: var(--white-color);
   border-bottom: 1px solid var(--border-color);
-
+  
   &__container {
     align-items: center;
     justify-content: space-between;
+  }
+  
+  @media (min-width: 480px) {
+    // background-color: red;
+  }
+  
+  @media (min-width: 768px) {
+    // min-height: 80px;
+    // background-color: rosybrown;
+  }
+  
+  @media (min-width:1600px) {
+    // background-color: saddlebrown;
   }
 }
