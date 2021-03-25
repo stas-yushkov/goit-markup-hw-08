@@ -35,4 +35,8 @@
 
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  $minWidthMobile: 480px;
+  $minWidthTablet: 768px;
+  $minWidthDesktop: 1600px;
 }
