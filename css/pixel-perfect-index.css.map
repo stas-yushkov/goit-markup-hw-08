@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": ";AAAA,AAAA,IAAI,CAAC;EACH,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,KAAK;EAE1B,kCAAkC;EAClC,gBAAgB,EAAE,8BAA8B;CASjD;;AAPC,MAAM,EAAE,SAAS,EAAE,KAAK;EAP1B,AAAA,IAAI,CAAC;IAQD,gBAAgB,EAAE,8BAA8B;IAAE,sBAAsB;GAM3E;;;AAHC,MAAM,EAAE,SAAS,EAAE,KAAK;EAX1B,AAAA,IAAI,CAAC;IAYD,gBAAgB,EAAE,8BAA8B;IAAE,sBAAsB;GAE3E;;;AAED,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,GAAG;CACb",
-    "sources": [
-        "../sass/utils/pixel-perfect/pixel-perfect-index.scss"
-    ],
-    "names": [],
-    "file": "pixel-perfect-index.css"
-}

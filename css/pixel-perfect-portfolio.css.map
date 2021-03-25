@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": ";AAAA,AAAA,IAAI,CAAC;EACH,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,KAAK;EAE1B,kCAAkC;EAClC,gBAAgB,EAAE,iCAAiC;CASpD;;AAPC,MAAM,EAAE,SAAS,EAAE,KAAK;EAP1B,AAAA,IAAI,CAAC;IAQD,gBAAgB,EAAE,iCAAiC;IAAE,sBAAsB;GAM9E;;;AAHC,MAAM,EAAE,SAAS,EAAE,KAAK;EAX1B,AAAA,IAAI,CAAC;IAYD,gBAAgB,EAAE,iCAAiC;IAAE,sBAAsB;GAE9E;;;AAED,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,GAAG;CACb",
-    "sources": [
-        "../sass/utils/pixel-perfect/pixel-perfect-portfolio.scss"
-    ],
-    "names": [],
-    "file": "pixel-perfect-portfolio.css"
-}
