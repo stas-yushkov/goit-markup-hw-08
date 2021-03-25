@@ -1,19 +1,10 @@
 .menu-button {
-
-  
-  // position: absolute;
-  // top: 8px;
-  // right: 8px;
   background-color: var(--transparent-color);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
   border: none;
-  // border: 1px solid var(--close-border-color);
-  // width: 30px;
-  // height: 30px;
-  // border-radius: 50%;
   color: var(--black-color);
   cursor: pointer;
   outline: none;
@@ -27,11 +18,16 @@
     color: var(--accent-color);
   }
 
+
+  & > svg {
+    fill: currentColor;
+  }
+
   @media (min-width: 768px) {
     display: none;
   }
 }
 
-.menu-button > svg {
-  fill: currentColor;
-}
+// .menu-button > svg {
+//   fill: currentColor;
+// }
