@@ -315,21 +315,21 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .hero {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-tab.jpg);
     background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-tab.jpg);
   }
 }
 
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 192dpi), (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-tab@2x.jpg);
     background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-tab@2x.jpg);
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 768px) {
   .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -354,7 +354,7 @@ img {
   }
 }
 
-@media (min-width: 1600px) and (min-device-pixel-ratio: 2), (min-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1600px) and (min-resolution: 192dpi), (min-width: 1600px) and (min-resolution: 2dppx) {
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero@2x.jpg);
     background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero@2x.jpg);
@@ -370,7 +370,7 @@ img {
   text-align: center;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 768px) {
   .hero-title {
     margin-bottom: 30px;
     font-weight: 900;
