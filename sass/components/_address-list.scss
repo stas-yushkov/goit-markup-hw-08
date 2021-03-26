@@ -9,12 +9,14 @@
   @media (min-width: 768px) {
     // background-color: rosybrown;
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
   
   @media (min-width:1600px) {
     // background-color: saddlebrown;
+    flex-direction: row;
   }  
 }
  
@@ -42,10 +44,18 @@
     color: var(--accent-color);
     outline: none;
   }
+
+  @media (max-width: 1599px) {
+    margin-right: 0;
+  }
 }
 
 .address-item:last-child {
   margin-right: 0;
+  @media (max-width: 1599px) {
+    margin-top: 10px;
+  }
+
 }
 
 .address-icon {
