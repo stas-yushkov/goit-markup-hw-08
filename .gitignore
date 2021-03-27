@@ -1,13 +1,3 @@
-.vscode
-.idea
-.DC_Store
-node_modules
-.env
-build/
-*.psd
-
-
-
 # Logs
 logs
 *.log
@@ -112,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+.htmlhintrc.yaml
+.prettierrc.yaml
+.stylelintrc.yaml
+
+.vscode/
