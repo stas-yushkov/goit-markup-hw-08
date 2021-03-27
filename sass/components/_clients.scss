@@ -1,51 +1,88 @@
-.clients__container {
-  flex-direction: column;
-  align-items: center;
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.client-link {
+.clients__list {
   display: flex;
-  width: 170px;
-  height: 90px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.clients__title {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-main;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.clients__link {
+  display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid var(--social-link-color);
+  height: 90px;
+  border: 1px solid #AFB1B8;
   border-radius: 4px;
-  fill: var(--social-link-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  transition-property: fill, border-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color);
-    fill: var(--accent-color);
-    outline: none;
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 
+  &> svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover {
+    border: 1px solid $color-link;
+
+    &> svg {
+      fill: $color-link;
+    }
+
+  }
+  
 }
 
-
-.clients .flex-grid__item {
-  flex-basis: calc(
-    100% / 6 - var(--flex-grid-gap)
-  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--flex-grid-gap)  */
-
-  margin-top: var(--flex-grid-gap);
-  margin-left: var(--flex-grid-gap);
-
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2); */
-  border-radius: 4px;
-  text-align: center;
-  box-shadow: none;
-
-  background-color: var(--white-color);
-
-  /* width: 270px; */
+.clients__icon {
+  fill: $icon-social;
 }
 
-/* * {
-  outline: 1px dotted rgba(0, 0, 0, 0.06);
-} */
+.clients__item {
+  margin-bottom: 30px;
+  width: calc((100% - 30px) / 2);
+
+  &:last-child {
+    margin-bottom: 0;
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
