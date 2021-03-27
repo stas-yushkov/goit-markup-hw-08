@@ -296,6 +296,7 @@ img {
 }
 
 .hero {
+  min-width: 320px;
   background-color: var(--hero-bg-color);
   background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-mob.jpg);
   background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-mob.jpg);
@@ -310,20 +311,6 @@ img {
   .hero {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-mob@2x.jpg);
     background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-mob@2x.jpg);
-  }
-}
-
-@media (min-width: 480px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-tab.jpg);
-    background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-tab.jpg);
-  }
-}
-
-@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 192dpi), (min-width: 480px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-tab@2x.jpg);
-    background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-tab@2x.jpg);
   }
 }
 
@@ -347,12 +334,26 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding: 200px 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-tab.jpg);
+    background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-tab.jpg);
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero-tab@2x.jpg);
+    background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero-tab@2x.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero.jpg);
     background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero.jpg);
   }
 }
 
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left bottom, left top, from(var(--hero-overlay-color)), to(var(--hero-overlay-color))), url(../images/hero@2x.jpg);
     background-image: linear-gradient(to top, var(--hero-overlay-color), var(--hero-overlay-color)), url(../images/hero@2x.jpg);
@@ -877,7 +878,7 @@ img {
   outline: none;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1199px) {
   .address-item {
     margin-right: 0;
   }
@@ -887,7 +888,7 @@ img {
   margin-right: 0;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1199px) {
   .address-item:last-child {
     margin-top: 10px;
   }
