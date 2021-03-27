@@ -233,11 +233,24 @@ ul {
   /* compensation for .card margins */
   margin-top: calc(-1 * var(--flex-grid-gap));
   margin-left: calc(-1 * var(--flex-grid-gap));
+  min-width: 320px;
+}
+
+@media (min-width: 768px) {
+  .flex-grid {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-grid {
+    width: 1200px;
+  }
 }
 
 .flex-grid__item {
-  -ms-flex-preferred-size: calc( 100% / 4 - var(--flex-grid-gap));
-      flex-basis: calc( 100% / 4 - var(--flex-grid-gap));
+  -ms-flex-preferred-size: calc( 100% / 1 - var(--flex-grid-gap));
+      flex-basis: calc( 100% / 1 - var(--flex-grid-gap));
   /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--flex-grid-gap)  */
   margin-top: var(--flex-grid-gap);
   margin-left: var(--flex-grid-gap);
@@ -248,9 +261,37 @@ ul {
   background-color: var(--white-color);
 }
 
+@media (min-width: 768px) {
+  .flex-grid__item {
+    -ms-flex-preferred-size: calc( 100% / 2 - var(--flex-grid-gap));
+        flex-basis: calc( 100% / 2 - var(--flex-grid-gap));
+    /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--flex-grid-gap)  */
+  }
+}
+
+@media (min-width: 1200px) {
+  .flex-grid__item {
+    -ms-flex-preferred-size: calc( 100% / 4 - var(--flex-grid-gap));
+        flex-basis: calc( 100% / 4 - var(--flex-grid-gap));
+    /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--flex-grid-gap)  */
+  }
+}
+
 .card {
   background-color: var(--white-color);
-  max-width: 270px;
+  max-width: 450px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    max-width: 270px;
+  }
 }
 
 /* Самая простая техника отзывчивых изображений card__thumb */
@@ -558,13 +599,25 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   /* padding: 25px 100px; */
   /* padding: auto;
   text-align: center; */
   border-radius: 4px;
   background-color: var(--secondary-background-color);
+}
+
+@media (min-width: 768px) {
+  .features .card__thumb {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features .card__thumb {
+    width: 270px;
+  }
 }
 
 .features .container {

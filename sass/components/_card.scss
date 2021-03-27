@@ -1,6 +1,13 @@
 .card {
   background-color: var(--white-color);
-  max-width: 270px;
+  max-width: 450px;
+  @media (min-width: 768px) {
+    max-width: 354px;
+  }
+  
+  @media (min-width:1200px) {
+    max-width: 270px;
+  }  
 }
 
 /* Самая простая техника отзывчивых изображений card__thumb */
