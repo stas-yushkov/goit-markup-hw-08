@@ -1,7 +1,7 @@
 .hero__overlay {
   display: flex;
   // max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-header-480.jpg);
   background-color: $bg-hero;
   background-repeat: no-repeat;
@@ -25,6 +25,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    min-height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-header-1600.jpg);
 
     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
